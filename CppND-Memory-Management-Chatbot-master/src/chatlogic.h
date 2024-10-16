@@ -47,7 +47,7 @@ public:
     // proprietary functions
     void LoadAnswerGraphFromFile(std::string filename);     // main function that loads text file & converts it into graph structure
     void SendMessageToChatbot(std::string message);     // sends message to ChatBot
-    void SendMessageToUser(std::string message);    // sends message to user from BhatBot
+    void SendMessageToUser(std::string message);    // sends message to user from ChatBot
     wxBitmap *GetImageFromChatbot();    // retrieves handle to image that is managed by ChatBot, so it can be displayed in graphical user interface
 };
 
