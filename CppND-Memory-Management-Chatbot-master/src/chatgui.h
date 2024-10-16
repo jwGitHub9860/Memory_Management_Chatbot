@@ -3,6 +3,8 @@
 
 #include <wx/wx.h>
 
+using namespace std;
+
 class ChatLogic; // forward declaration
 
 // middle part of the window containing the dialog between user and chatbot
@@ -17,6 +19,10 @@ private:
     ////
 
     ChatLogic *_chatLogic;  // pointer to chat logic itself
+
+    unique_ptr<ChatLogic> uniquePtr(new ChatLogic);     // construct unique pointer
+    shared_ptr<ChatLogic> sharedPtr;       // Shared pointer
+    ChatLogic *rawPtr;  // Raw pointer
 
     ////
     //// EOF STUDENT CODE

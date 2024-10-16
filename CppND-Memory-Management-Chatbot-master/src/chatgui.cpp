@@ -134,6 +134,9 @@ ChatBotPanelDialog::~ChatBotPanelDialog()
 {
     //// STUDENT CODE
     ////
+    unique_ptr<ChatLogic> uniquePtr(new ChatLogic);     // construct unique pointer
+    shared_ptr<ChatLogic> sharedPtr = move();       // convert Unique pointer to Shared pointer
+    ChatLogic *rawPtr = sharedPtr.get();  // convert Shared pointer to Raw pointer
 
     delete _chatLogic;
 
