@@ -1,17 +1,17 @@
 #include "graphedge.h"
 #include "graphnode.h"
 
-GraphNode::GraphNode(int id)
+GraphNode::GraphNode(int id)    // constructor
 {
-    _id = id;
+    _id = id;   // assigns ID
 }
 
-GraphNode::~GraphNode()
+GraphNode::~GraphNode()     // destructor
 {
     //// STUDENT CODE
     ////
 
-    delete _chatBot; 
+    delete _chatBot;    // deletes ChatBot, once it moves away from graph node OR graph node is destroyed
 
     ////
     //// EOF STUDENT CODE

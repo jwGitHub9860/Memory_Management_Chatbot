@@ -6,7 +6,7 @@
 class ChatLogic; // forward declaration
 
 // middle part of the window containing the dialog between user and chatbot
-class ChatBotPanelDialog : public wxScrolledWindow
+class ChatBotPanelDialog : public wxScrolledWindow      // holds elements needed for displaying dialogue between user & chatbot
 {
 private:
     // control elements
@@ -16,37 +16,37 @@ private:
     //// STUDENT CODE
     ////
 
-    ChatLogic *_chatLogic;
+    ChatLogic *_chatLogic;  // pointer to chat logic itself
 
     ////
     //// EOF STUDENT CODE
 
 public:
-    // constructor / destructor
-    ChatBotPanelDialog(wxWindow *parent, wxWindowID id);
+    // constructor / destructor         for drawing background image of San Francisco Golden Gate Bridge
+    ChatBotPanelDialog(wxWindow *parent, wxWindowID id);    // have window functions
     ~ChatBotPanelDialog();
 
-    // getter / setter
+    // getter / setter                  for drawing background image of San Francisco Golden Gate Bridge
     ChatLogic *GetChatLogicHandle() { return _chatLogic; }
 
-    // events
+    // events                           for drawing background image of San Francisco Golden Gate Bridge
     void paintEvent(wxPaintEvent &evt);
     void paintNow();
     void render(wxDC &dc);
 
     // proprietary functions
-    void AddDialogItem(wxString text, bool isFromUser = true);
+    void AddDialogItem(wxString text, bool isFromUser = true);      // possibility to add new dialogue item & print chatbot response to Next code line
     void PrintChatbotResponse(std::string response);
 
     DECLARE_EVENT_TABLE()
 };
 
 // dialog item shown in ChatBotPanelDialog
-class ChatBotPanelDialogItem : public wxPanel
+class ChatBotPanelDialogItem : public wxPanel   // item which could either be from user or chatbot
 {
 private:
     // control elements
-    wxStaticBitmap *_chatBotImg;
+    wxStaticBitmap *_chatBotImg;    // has image in case chatbot is answering image rode along by chatbot depending on position in current graph node network
     wxStaticText *_chatBotTxt;
 
 public:

@@ -16,18 +16,18 @@ private:
     ////
 
     // data handles (owned)
-    std::vector<GraphEdge *> _childEdges;  // edges to subsequent nodes
+    std::vector<GraphEdge *> _childEdges;  // edges to subsequent nodes         responsible for allocating & de-allocating memory
 
     // data handles (not owned)
-    std::vector<GraphEdge *> _parentEdges; // edges to preceding nodes 
+    std::vector<GraphEdge *> _parentEdges; // edges to preceding nodes          NOT responsible for allocating & de-allocating memory
     ChatBot *_chatBot;
 
     ////
     //// EOF STUDENT CODE
 
     // proprietary members
-    int _id;
-    std::vector<std::string> _answers;
+    int _id;    // loaded from 'answergraph.txt' file
+    std::vector<std::string> _answers;    // loaded from 'answergraph.txt' file 
 
 public:
     // constructor / destructor
@@ -49,7 +49,7 @@ public:
     //// STUDENT CODE
     ////
 
-    void MoveChatbotHere(ChatBot *chatbot);
+    void MoveChatbotHere(ChatBot *chatbot);     // pass handle to ChatBot & move it here
 
     ////
     //// EOF STUDENT CODE

@@ -45,10 +45,10 @@ public:
     void SetChatbotHandle(ChatBot *chatbot);
 
     // proprietary functions
-    void LoadAnswerGraphFromFile(std::string filename);
-    void SendMessageToChatbot(std::string message);
-    void SendMessageToUser(std::string message);
-    wxBitmap *GetImageFromChatbot();
+    void LoadAnswerGraphFromFile(std::string filename);     // main function that loads text file & converts it into graph structure
+    void SendMessageToChatbot(std::string message);     // sends message to ChatBot
+    void SendMessageToUser(std::string message);    // sends message to user from BhatBot
+    wxBitmap *GetImageFromChatbot();    // retrieves handle to image that is managed by ChatBot, so it can be displayed in graphical user interface
 };
 
 #endif /* CHATLOGIC_H_ */

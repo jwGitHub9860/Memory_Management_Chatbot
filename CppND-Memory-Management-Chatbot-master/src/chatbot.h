@@ -15,7 +15,7 @@ private:
 
     // data handles (not owned)
     GraphNode *_currentNode;
-    GraphNode *_rootNode;
+    GraphNode *_rootNode;   // ChatBot needs once it reaches dead end
     ChatLogic *_chatLogic;
 
     // proprietary functions
