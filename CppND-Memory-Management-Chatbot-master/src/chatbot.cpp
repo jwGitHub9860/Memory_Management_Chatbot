@@ -69,10 +69,27 @@ ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
 ChatBot(ChatBot &&source);      // 4 : move constructor
 {
     cout << "ChatBot Move Constructor" << endl;
+
+    _chatLogic = source._chatLogic;     // copies _chatLogic from source
+    _rootNode = source._rootNode;       // copies _rootNode from source
+    source._chatLogic = 0;              // prevents _chatNode from being used again
+    source._rootNode = nullptr;         // prevents _rootNode from being used again
 }
 ChatBot &operator=(ChatBot &&source);   // 5 : move assignment operator
 {
     cout << "ChatBot Move Assignment Operator" << endl;
+    if (this == &source)    // proctects against self assignment
+    {
+        return *this;
+    }
+    delete[] _rootNode;     // deletes _rootNode since code looped before & needs to be deallocated
+
+    _chatNode = source._chatNode;   // copies _chatNode from source
+    _rootNode = source._rootNode;   // copies _rootNode from source
+    source._chatNode = 0;           // prevents _chatNode from being used again
+    source._rootNode = nullptr;     // prevents _rootNode from being used again
+
+    return *this;
 }
 ////
 //// EOF STUDENT CODE
