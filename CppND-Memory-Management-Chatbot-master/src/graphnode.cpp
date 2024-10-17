@@ -11,7 +11,7 @@ GraphNode::~GraphNode()     // destructor
     //// STUDENT CODE
     ////
 
-    //delete _chatBot;    // deletes ChatBot, once it moves away from graph node OR graph node is destroyed     solves Task 0 (Warm-up task)
+    //delete _chatBot;    // deletes ChatBot, once it moves away from graph node OR graph node is destroyed     solves Task 0 (Warm-up task) by deleting the 2nd dellocation
 
     ////
     //// EOF STUDENT CODE
