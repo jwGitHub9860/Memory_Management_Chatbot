@@ -20,7 +20,7 @@ ChatBot::ChatBot()
 }
 
 // constructor WITH memory allocation
-ChatBot::ChatBot(std::string filename)
+ChatBot::ChatBot(std::string filename)      // constructor
 {
     std::cout << "ChatBot Constructor" << std::endl;
     
