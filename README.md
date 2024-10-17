@@ -6,6 +6,8 @@ George. "Completely lost with Chatbot Project." Knowledge, Udacity, knowledge.ud
 
 Josi K. "Warm Up Task." Knowledge, Udacity, knowledge.udacity.com/questions/814295. Accessed 16 Oct. 2024.
 
+Kinshuk Vasisht. "What is new int in c++: Sololearn: Learn to code for FREE!" Sololearn, 6 Jan 2018, www.sololearn.com/en/Discuss/983892/what-is-new-int-in-c. Accessed 17 Oct. 2024.
+
 "MLA Works Cited: Electronic Sources (Web Publications)." MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University, 
       owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 16 Oct. 2024.
 
