@@ -61,9 +61,11 @@ ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
         return *this;
     }
     delete[] _rootNode; // deletes "_rootNode" since code looped before & need to deallocate data
+
     _chatLogic = source._chatLogic;   // creates copy of "chatLogic" from source
     _rootNode = new string[_chatLogic];     // dynamically allocates its own memory
     *_rootNode = *source._rootNode;     // copies content of sour to newly allocated heap memory (Deep Copy)
+    
     return *this;
 }
 ChatBot(ChatBot &&source);      // 4 : move constructor
