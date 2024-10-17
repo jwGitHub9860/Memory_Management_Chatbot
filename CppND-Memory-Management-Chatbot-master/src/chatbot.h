@@ -19,7 +19,7 @@ private:
     ChatLogic *_chatLogic;
 
     // proprietary functions
-    int ComputeLevenshteinDistance(std::string s1, std::string s2);
+    int ComputeLevenshteinDistance(std::string s1, std::string s2);     // helps compute similarity between user query & available keywords in an edge          Levenshtein distance - measure that looks at similarity between 2 strings
 
 public:
     // constructors / destructors
