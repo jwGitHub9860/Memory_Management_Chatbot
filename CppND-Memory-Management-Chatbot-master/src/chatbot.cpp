@@ -49,10 +49,22 @@ ChatBot::~ChatBot()     // 1 : destructor
 ChatBot(const ChatBot &source)     // 2 : copy constructor
 {
     cout << "ChatBot Copy Constructor" << endl;
+    _chatLogic = source._chatLogic;   // creates copy of "chatLogic"
+    _rootNode = new string[_chatLogic];     // dynamically allocates its own memory
+    *_rootNode = *source._rootNode;     // copies content of sour to newly allocated heap memory (Deep Copy)
 }
 ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
 {
     cout << "ChatBot Copy Assignment Operator" << endl;
+    if (this == &source)    // protects against self assignment
+    {
+        return *this;
+    }
+    delete[] _rootNode; // deletes "_rootNode" since code looped before & need to deallocate data
+    _chatLogic = source._chatLogic;   // creates copy of "chatLogic"
+    _rootNode = new string[_chatLogic];     // dynamically allocates its own memory
+    *_rootNode = *source._rootNode;     // copies content of sour to newly allocated heap memory (Deep Copy)
+    return *this;
 }
 ChatBot(ChatBot &&source);      // 4 : move constructor
 {
