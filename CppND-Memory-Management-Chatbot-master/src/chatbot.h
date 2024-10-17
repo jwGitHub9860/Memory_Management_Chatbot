@@ -27,7 +27,7 @@ public:
     ChatBot(std::string filename); // constructor WITH memory allocation
     ~ChatBot();     // 1 : destructor
 
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 2: Make code to compile Rule of Five
     ////
 
     ChatBot(const ChatBot &source);     // 2 : copy constructor
