@@ -4,8 +4,8 @@ Alexander K. "Problem starting chatbot from workspace." Knowledge, Udacity, know
 
 George. "Completely lost with Chatbot Project." Knowledge, Udacity, knowledge.udacity.com/questions/180795. Accessed 16 Oct. 2024.
 
-"MLA Works Cited: Electronic Sources (Web Publications)." MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 16 Oct.     
-      2024.
+"MLA Works Cited: Electronic Sources (Web Publications)." MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University, 
+      owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 16 Oct. 2024.
 
 "online compiler and debugger for c/c++." GDB online Debugger, www.onlinegdb.com/. Accessed 16 Oct. 2024.
 
