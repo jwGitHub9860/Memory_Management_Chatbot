@@ -46,14 +46,14 @@ ChatBot::~ChatBot()     // 1 : destructor
 
 //// STUDENT CODE       Task 2: Make code to compile Rule of Five
 ////
-ChatBot(const ChatBot &source)     // 2 : copy constructor
+ChatBot::ChatBot(const ChatBot &source)     // 2 : copy constructor
 {
     cout << "ChatBot Copy Constructor" << endl;
     _chatLogic = source._chatLogic;   // creates copy of "chatLogic" from source
     _rootNode = new string[_chatLogic];     // dynamically allocates its own memory
     *_rootNode = *source._rootNode;     // copies content of sour to newly allocated heap memory (Deep Copy)
 }
-ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
+ChatBot::ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
 {
     cout << "ChatBot Copy Assignment Operator" << endl;
     if (this == &source)    // protects against self assignment
@@ -68,7 +68,7 @@ ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
     
     return *this;
 }
-ChatBot(ChatBot &&source);      // 4 : move constructor
+ChatBot::ChatBot(ChatBot &&source);      // 4 : move constructor
 {
     cout << "ChatBot Move Constructor" << endl;
 
@@ -77,7 +77,7 @@ ChatBot(ChatBot &&source);      // 4 : move constructor
     source._chatLogic = 0;              // prevents _chatNode from being used again
     source._rootNode = nullptr;         // prevents _rootNode from being used again
 }
-ChatBot &operator=(ChatBot &&source);   // 5 : move assignment operator
+ChatBot::ChatBot &operator=(ChatBot &&source);   // 5 : move assignment operator
 {
     cout << "ChatBot Move Assignment Operator" << endl;
     if (this == &source)    // proctects against self assignment
