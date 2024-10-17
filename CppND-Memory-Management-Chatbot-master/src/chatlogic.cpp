@@ -33,7 +33,7 @@ ChatLogic::~ChatLogic()
     ////
 
     // delete chatbot instance
-    delete _chatBot;
+    delete _chatBot;    // deletes ChatBot, once it moves away from graph node OR graph node is destroyed     solves Task 0 (Warm-up task) by deleting the 2nd dellocation
 
     // delete all nodes
     for (auto it = std::begin(_nodes); it != std::end(_nodes); ++it)
