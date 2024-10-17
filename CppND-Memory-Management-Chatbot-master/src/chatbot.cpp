@@ -30,7 +30,7 @@ ChatBot::ChatBot(std::string filename)
     _image = new wxBitmap(filename, wxBITMAP_TYPE_PNG);
 }
 
-ChatBot::~ChatBot()     // destructor
+ChatBot::~ChatBot()     // 1 : destructor
 {
     std::cout << "ChatBot Destructor" << std::endl;
 
