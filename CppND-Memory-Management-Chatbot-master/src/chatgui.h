@@ -22,8 +22,8 @@ private:
     ChatLogic *_chatLogic;  // pointer to chat logic itself
 
     unique_ptr<ChatLogic> uniquePtr;     // construct unique pointer
-    shared_ptr<ChatLogic> sharedPtr;       // Shared pointer
-    ChatLogic *rawPtr;  // Raw pointer
+    //shared_ptr<ChatLogic> sharedPtr;       // Shared pointer
+    //ChatLogic *rawPtr;  // Raw pointer
 
     ////
     //// EOF STUDENT CODE
