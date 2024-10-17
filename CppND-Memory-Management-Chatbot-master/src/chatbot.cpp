@@ -8,6 +8,8 @@
 #include "graphedge.h"
 #include "chatbot.h"
 
+using namespace std;
+
 // constructor WITHOUT memory allocation
 ChatBot::ChatBot()
 {
@@ -45,13 +47,21 @@ ChatBot::~ChatBot()     // 1 : destructor
 //// STUDENT CODE       Task 2: Make code to compile Rule of Five
 ////
 ChatBot(const ChatBot &source)     // 2 : copy constructor
-{}
+{
+    cout << "ChatBot Copy Constructor" << endl;
+}
 ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
-{}
+{
+    cout << "ChatBot Copy Assignment Operator" << endl;
+}
 ChatBot(ChatBot &&source);      // 4 : move constructor
-{}
+{
+    cout << "ChatBot Move Constructor" << endl;
+}
 ChatBot &operator=(ChatBot &&source);   // 5 : move assignment operator
-{}
+{
+    cout << "ChatBot Move Assignment Operator" << endl;
+}
 ////
 //// EOF STUDENT CODE
 
