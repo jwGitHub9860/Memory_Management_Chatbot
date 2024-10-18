@@ -71,7 +71,7 @@ void ChatLogic::AddAllTokensToElement(std::string tokenID, tokenlist &tokens, T 
     }
 }
 
-void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
+void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main function that loads text file & converts it into graph structure
 {
     // load file with answer graph elements
     std::ifstream file(filename);
@@ -233,17 +233,17 @@ void ChatLogic::SetChatbotHandle(ChatBot *chatbot)
     _chatBot = chatbot;
 }
 
-void ChatLogic::SendMessageToChatbot(std::string message)
+void ChatLogic::SendMessageToChatbot(std::string message)     // sends message to ChatBot
 {
     _chatBot->ReceiveMessageFromUser(message);
 }
 
-void ChatLogic::SendMessageToUser(std::string message)
+void ChatLogic::SendMessageToUser(std::string message)    // sends message to user from ChatBot
 {
     _panelDialog->PrintChatbotResponse(message);
 }
 
-wxBitmap *ChatLogic::GetImageFromChatbot()
+wxBitmap *ChatLogic::GetImageFromChatbot()    // retrieves handle to image that is managed by ChatBot, so it can be displayed in graphical user interface
 {
     return _chatBot->GetImageHandle();
 }
