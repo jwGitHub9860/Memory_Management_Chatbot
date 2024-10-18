@@ -70,7 +70,7 @@ ChatBot::&ChatBot operator=(const ChatBot &source);      // 3 : copy assignment 
 
     _chatLogic = source._chatLogic;   // creates copy of "chatLogic" from source
     _rootNode = new string[_chatLogic];     // dynamically allocates its own memory
-    *_rootNode = *source._rootNode;     // copies content of sour to newly allocated heap memory (Deep Copy)
+    *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
     
     return *this;
 }
