@@ -66,7 +66,7 @@ ChatBot &ChatBot::operator=(const ChatBot &source)      // 3 : copy assignment o
     {
         return *this;
     }
-    delete[] _rootNode; // deletes "_rootNode" since code looped before & need to deallocate data
+    delete[] _image; // deletes "_image" since code looped before & need to deallocate data
 
     _chatLogic = source._chatLogic;   // creates copy of "chatLogic" from source
     _rootNode = source._rootNode;     // creates copy of "rootNode" from source
@@ -97,12 +97,12 @@ ChatBot &ChatBot::operator=(ChatBot &&source)   // 5 : move assignment operator
     {
         return *this;
     }
-    delete[] _rootNode;     // deletes "_rootNode" since code looped before & needs to be deallocated
+    delete[] _image;     // deletes "_image" since code looped before & needs to be deallocated
 
     _chatNode = source._chatNode;   // copies "_chatNode" from source
     _rootNode = source._rootNode;   // copies "_rootNode" from source
     _image = source._image;         // copies "_rootNode" from source
-    
+
     source._chatNode = nullptr;     // prevents "_chatNode" from being used again
     source._rootNode = nullptr;     // prevents "_rootNode" from being used again
     source._image = nullptr;        // prevents "_rootNode" from being used again
