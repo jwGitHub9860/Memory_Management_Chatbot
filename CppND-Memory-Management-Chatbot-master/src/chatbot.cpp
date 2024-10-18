@@ -86,7 +86,7 @@ ChatBot::ChatBot(ChatBot &&source)      // 4 : move constructor
 
     _chatLogic = source._chatLogic;     // copies "_chatLogic" from source
     _rootNode = source._rootNode;       // copies "_rootNode" from source
-    _image = source._image;             // copies "_rootNode" from source
+    _image = source._image;             // copies "_image" from source
 
     _chatLogic->SetChatbotHandle(this);     // confirms ChatLogic knows which ChatBot instance is currently active & should be interacted with: after ChatBot instance is moved & ChatLogic location is updated
 
@@ -105,13 +105,13 @@ ChatBot &ChatBot::operator=(ChatBot &&source)   // 5 : move assignment operator
 
     _chatLogic = source._chatLogic;   // copies "_chatLogic" from source
     _rootNode = source._rootNode;   // copies "_rootNode" from source
-    _image = source._image;         // copies "_rootNode" from source
+    _image = source._image;         // copies "_image" from source
 
     _chatLogic->SetChatbotHandle(this);     // confirms ChatLogic knows which ChatBot instance is currently active & should be interacted with: after ChatBot instance is moved & ChatLogic location is updated
 
     source._chatLogic = nullptr;     // prevents "_chatLogic" from being used again
     source._rootNode = nullptr;     // prevents "_rootNode" from being used again
-    source._image = nullptr;        // prevents "_rootNode" from being used again
+    source._image = nullptr;        // prevents "_image" from being used again
 
     return *this;
 }
