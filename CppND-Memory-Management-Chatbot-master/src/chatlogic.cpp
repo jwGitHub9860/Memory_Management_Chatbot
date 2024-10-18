@@ -228,7 +228,7 @@ void ChatLogic::SetPanelDialogHandle(ChatBotPanelDialog *panelDialog)
     _panelDialog = panelDialog;
 }
 
-void ChatLogic::SetChatbotHandle(ChatBot *chatbot)
+void ChatLogic::SetChatbotHandle(ChatBot *chatbot)      // links CURRENT ChatBot instance with ChatLogic manager
 {
     _chatBot = chatbot;
 }

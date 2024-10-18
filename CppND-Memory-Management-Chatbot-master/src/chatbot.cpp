@@ -55,6 +55,8 @@ ChatBot::ChatBot(const ChatBot &source)     // 2 : copy constructor
 
     _image = new wxBitmap();     // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
     
+    _chatLogic->SetChatbotHandle(this);     // confirms ChatLogic knows which ChatBot instance is currently active & should be interacted with: between Copy & Original
+
     *_chatLogic = *source._chatLogic;   // copies content of source to newly allocated heap memory (Deep Copy)
     *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
     *_image = *source._image;           // copies content of source to newly allocated heap memory (Deep Copy)
@@ -86,6 +88,8 @@ ChatBot::ChatBot(ChatBot &&source)      // 4 : move constructor
     _rootNode = source._rootNode;       // copies "_rootNode" from source
     _image = source._image;             // copies "_rootNode" from source
 
+    _chatLogic->SetChatbotHandle(this);     // confirms ChatLogic knows which ChatBot instance is currently active & should be interacted with: after ChatBot instance is moved & ChatLogic location is updated
+
     source._chatLogic = nullptr;    // prevents "_chatNode" from being used again
     source._rootNode = nullptr;     // prevents "_rootNode" from being used again
     source._image = nullptr;        // prevents "_image" from being used again
@@ -102,6 +106,8 @@ ChatBot &ChatBot::operator=(ChatBot &&source)   // 5 : move assignment operator
     _chatNode = source._chatNode;   // copies "_chatNode" from source
     _rootNode = source._rootNode;   // copies "_rootNode" from source
     _image = source._image;         // copies "_rootNode" from source
+
+    _chatLogic->SetChatbotHandle(this);     // confirms ChatLogic knows which ChatBot instance is currently active & should be interacted with: after ChatBot instance is moved & ChatLogic location is updated
 
     source._chatNode = nullptr;     // prevents "_chatNode" from being used again
     source._rootNode = nullptr;     // prevents "_rootNode" from being used again

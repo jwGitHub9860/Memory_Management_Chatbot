@@ -42,7 +42,7 @@ public:
 
     // getter / setter
     void SetPanelDialogHandle(ChatBotPanelDialog *panelDialog);
-    void SetChatbotHandle(ChatBot *chatbot);
+    void SetChatbotHandle(ChatBot *chatbot);    // links CURRENT ChatBot instance with ChatLogic manager
 
     // proprietary functions
     void LoadAnswerGraphFromFile(std::string filename);     // main function that loads text file & converts it into graph structure
