@@ -52,14 +52,14 @@ ChatBot::ChatBot(const ChatBot &source)     // 2 : copy constructor
 
     _chatLogic = source._chatLogic;   // creates copy of "_chatLogic" from source
     _rootNode = source._rootNode;     // creates copy of "_rootNode" from source
-    
+
     _image = new wxBitmap();     // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
     
     *_chatLogic = *source._chatLogic;     // copies content of source to newly allocated heap memory (Deep Copy)
     *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
     *_image = *source._image;     // copies content of source to newly allocated heap memory (Deep Copy)
 }
-ChatBot::ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
+ChatBot::&ChatBot operator=(const ChatBot &source);      // 3 : copy assignment operator
 {
     cout << "ChatBot Copy Assignment Operator" << endl;
     if (this == &source)    // protects against self assignment
@@ -83,7 +83,7 @@ ChatBot::ChatBot(ChatBot &&source);      // 4 : move constructor
     source._chatLogic = 0;              // prevents _chatNode from being used again
     source._rootNode = nullptr;         // prevents _rootNode from being used again
 }
-ChatBot::ChatBot &operator=(ChatBot &&source);   // 5 : move assignment operator
+ChatBot::&ChatBot operator=(ChatBot &&source);   // 5 : move assignment operator
 {
     cout << "ChatBot Move Assignment Operator" << endl;
     if (this == &source)    // proctects against self assignment
