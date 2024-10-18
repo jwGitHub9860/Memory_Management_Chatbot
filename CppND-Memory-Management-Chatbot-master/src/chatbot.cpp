@@ -74,6 +74,8 @@ ChatBot &ChatBot::operator=(const ChatBot &source)      // 3 : copy assignment o
     _rootNode = source._rootNode;     // creates copy of "rootNode" from source
     _image = new wxBitmap();          // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
 
+    _chatLogic->SetChatbotHandle(this);     // confirms ChatLogic knows which ChatBot instance is currently active & should be interacted with: between Copy & Original   (Keep or Delete?)
+
     *_chatLogic = *source._chatLogic;   // copies content of source to newly allocated heap memory (Deep Copy)
     *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
     *_image = *source._image;           // copies content of source to newly allocated heap memory (Deep Copy)
