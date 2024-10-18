@@ -55,9 +55,9 @@ ChatBot::ChatBot(const ChatBot &source)     // 2 : copy constructor
 
     _image = new wxBitmap();     // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
     
-    *_chatLogic = *source._chatLogic;     // copies content of source to newly allocated heap memory (Deep Copy)
+    *_chatLogic = *source._chatLogic;   // copies content of source to newly allocated heap memory (Deep Copy)
     *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
-    *_image = *source._image;     // copies content of source to newly allocated heap memory (Deep Copy)
+    *_image = *source._image;           // copies content of source to newly allocated heap memory (Deep Copy)
 }
 ChatBot &ChatBot::operator=(const ChatBot &source)      // 3 : copy assignment operator
 {
@@ -70,11 +70,11 @@ ChatBot &ChatBot::operator=(const ChatBot &source)      // 3 : copy assignment o
 
     _chatLogic = source._chatLogic;   // creates copy of "chatLogic" from source
     _rootNode = source._rootNode;     // creates copy of "rootNode" from source
-    _image = new wxBitmap();     // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
+    _image = new wxBitmap();          // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
 
-    *_chatLogic = *source._chatLogic;     // copies content of source to newly allocated heap memory (Deep Copy)
+    *_chatLogic = *source._chatLogic;   // copies content of source to newly allocated heap memory (Deep Copy)
     *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
-    *_image = *source._image;     // copies content of source to newly allocated heap memory (Deep Copy)
+    *_image = *source._image;           // copies content of source to newly allocated heap memory (Deep Copy)
     
     return *this;
 }
@@ -84,10 +84,10 @@ ChatBot::ChatBot(ChatBot &&source)      // 4 : move constructor
 
     _chatLogic = source._chatLogic;     // copies "_chatLogic" from source
     _rootNode = source._rootNode;       // copies "_rootNode" from source
-    _image = source._image;
+    _image = source._image;             // copies "_rootNode" from source
 
-    source._chatLogic = nullptr;              // prevents "_chatNode" from being used again
-    source._rootNode = nullptr;         // prevents "_rootNode" from being used again
+    source._chatLogic = nullptr;    // prevents "_chatNode" from being used again
+    source._rootNode = nullptr;     // prevents "_rootNode" from being used again
     source._image = nullptr;        // prevents "_image" from being used again
 }
 ChatBot &ChatBot::operator=(ChatBot &&source)   // 5 : move assignment operator
