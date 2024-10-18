@@ -49,9 +49,15 @@ ChatBot::~ChatBot()     // 1 : destructor
 ChatBot::ChatBot(const ChatBot &source)     // 2 : copy constructor
 {
     cout << "ChatBot Copy Constructor" << endl;
-    _chatLogic = source._chatLogic;   // creates copy of "chatLogic" from source
-    _rootNode = new string[_chatLogic];     // dynamically allocates its own memory
-    *_rootNode = *source._rootNode;     // copies content of sour to newly allocated heap memory (Deep Copy)
+
+    _chatLogic = source._chatLogic;   // creates copy of "_chatLogic" from source
+    _rootNode = source._rootNode;     // creates copy of "_rootNode" from source
+    
+    _image = new wxBitmap();     // dynamically allocates its own Heap memory       new ---> allocates memory on heap 
+    
+    *_chatLogic = *source._chatLogic;     // copies content of source to newly allocated heap memory (Deep Copy)
+    *_rootNode = *source._rootNode;     // copies content of source to newly allocated heap memory (Deep Copy)
+    *_image = *source._image;     // copies content of source to newly allocated heap memory (Deep Copy)
 }
 ChatBot::ChatBot &operator=(const ChatBot &source);      // 3 : copy assignment operator
 {
