@@ -31,9 +31,9 @@ void GraphNode::AddEdgeToParentNode(GraphEdge *edge)
     _parentEdges.push_back(edge);
 }
 
-void GraphNode::AddEdgeToChildNode(unique_ptr<GraphEdge> edge)
+void GraphNode::AddEdgeToChildNode(unique_ptr<GraphEdge> edge)  // changed "edge" to UNIQUE pointer to match 'new edge' pointer change
 {
-    _childEdges.push_back(edge);
+    _childEdges.push_back(move(edge));  // changed "edge" to "move(edge)" since function will take "move(edge)" from '*parentNode'
 }
 
 //// STUDENT CODE
