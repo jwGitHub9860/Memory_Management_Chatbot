@@ -1,5 +1,9 @@
+#include <memory>
+
 #include "graphedge.h"
 #include "graphnode.h"
+
+using namespace std;
 
 GraphNode::GraphNode(int id)    // constructor
 {
@@ -27,7 +31,7 @@ void GraphNode::AddEdgeToParentNode(GraphEdge *edge)
     _parentEdges.push_back(edge);
 }
 
-void GraphNode::AddEdgeToChildNode(GraphEdge *edge)
+void GraphNode::AddEdgeToChildNode(unique_ptr<GraphEdge> edge)
 {
     _childEdges.push_back(edge);
 }
