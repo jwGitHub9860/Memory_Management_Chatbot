@@ -36,10 +36,10 @@ ChatLogic::~ChatLogic()
     delete _chatBot;    // deletes ChatBot, once it moves away from graph node OR graph node is destroyed       1st dellocation
 
     // delete all nodes
-    for (auto it = std::begin(_nodes); it != std::end(_nodes); ++it)
+    /*for (auto it = std::begin(_nodes); it != std::end(_nodes); ++it)
     {
-        delete *it;
-    }
+        delete *it;  // frees up memory  ---> do NOT want; need the pointer
+    }*/
 
     // delete all edges
     for (auto it = std::begin(_edges); it != std::end(_edges); ++it)
