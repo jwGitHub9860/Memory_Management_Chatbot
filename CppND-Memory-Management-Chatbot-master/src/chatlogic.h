@@ -5,6 +5,8 @@
 #include <string>
 #include "chatgui.h"
 
+using namespace std;
+
 // forward declarations
 class ChatBot;
 class GraphEdge;
@@ -13,11 +15,12 @@ class GraphNode;
 class ChatLogic
 {
 private:
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 3: Change "_nodes" into a smart pointer
     ////
 
     // data handles (owned)
-    std::vector<GraphNode *> _nodes;    // pointers to graph nodes
+    //std::vector<GraphNode *> _nodes;    // pointers to graph nodes
+    vector<unique_ptr<GraphNode *>> _nodes;    // UNIQUE pointers to graph nodes
     std::vector<GraphEdge *> _edges;    // pointers to graph edges
 
     ////
