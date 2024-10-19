@@ -32,7 +32,7 @@ public:
     ~ChatBotPanelDialog();
 
     // getter / setter                  for drawing background image of San Francisco Golden Gate Bridge
-    ChatLogic *GetChatLogicHandle() { return _chatLogic; }
+    ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }    // converts "unique_ptr<ChatLogic>" to "ChatLogic*"
 
     // events                           for drawing background image of San Francisco Golden Gate Bridge
     void paintEvent(wxPaintEvent &evt);
