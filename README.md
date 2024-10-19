@@ -2,6 +2,8 @@ References:
 
 Alexander K. "Problem starting chatbot from workspace." Knowledge, Udacity, knowledge.udacity.com/questions/507542. Accessed 16 Oct. 2024.
 
+Daniela M. "Problems with Task3." Knowledge, Udacity, knowledge.udacity.com/questions/775764. Accessed 19 Oct. 2024.
+
 George. "Completely lost with Chatbot Project." Knowledge, Udacity, knowledge.udacity.com/questions/180795. Accessed 16 Oct. 2024.
 
 Hsiao-Hung C. "Task 2 Rule of Five : The usage of _chatLogic->SetChatbotHandle(this)." Knowledge, Udacity, knowledge.udacity.com/questions/1038177. Accessed 18 Oct. 2024.
