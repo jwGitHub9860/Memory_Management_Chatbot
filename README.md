@@ -24,4 +24,6 @@ str1ngth3ory. "str1ngth3ory/Chatbot: Udacity C++ Nanodegree Project 3." GitHub, 
 
 "The Rule of Five in C++." GeeksforGeeks, 17 Jan. 2024, www.geeksforgeeks.org/rule-of-five-in-cpp/. Accessed 16 Oct. 2024.
 
+"unique_ptr to char* conversion." Stack Overflow, 1 Sept. 1961, stackoverflow.com/questions/37875781/unique-ptr-to-char-conversion. Accessed 19 Oct. 2024.
+
 YueYang-ASIC. "CppND-Memory-Management-Chatbot/src at master · YueYang-ASIC/CppND-Memory-Management-Chatbot." GitHub, github.com/YueYang-ASIC/CppND-Memory-Management-Chatbot/tree/master/src. Accessed 16 Oct. 2024.
