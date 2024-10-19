@@ -16,7 +16,7 @@ private:
     wxBoxSizer *_dialogSizer;
     wxBitmap _image;
 
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 1: Change "_chatLogic" into a smart pointer
     ////
 
     ChatLogic *_chatLogic;  // pointer to chat logic itself
