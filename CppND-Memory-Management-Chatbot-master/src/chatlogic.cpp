@@ -208,7 +208,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
 
             if (rootNode == nullptr)
             {
-                rootNode = *it; // assign current node to root
+                rootNode = (*it).get(); // assign current node to root       converts "unique_ptr<ChatLogic>" to "ChatLogic*"
             }
             else
             {
