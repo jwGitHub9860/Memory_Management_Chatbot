@@ -17,6 +17,7 @@ Omar. "TASK 2: Usage of _chatLogic->SetChatbotHandle(this);." Knowledge, Udacity
 "online compiler and debugger for c/c++." GDB online Debugger, www.onlinegdb.com/. Accessed 16 Oct. 2024.
 
 R. Nick R. "Warm up task/bug." Knowledge, Udacity, knowledge.udacity.com/questions/646637. Accessed 16 Oct. 2024.
+"r/cpp_questions on Reddit: What is the purpose of get() for unique_ptr?" www.reddit.com/r/cpp_questions/comments/m1ca4a/what_is_the_purpose_of_get_for_unique_ptr/#:~:text=It%20gets%20you%20a%20raw,pass%20it%20into%20a%20function. Accessed 19 Oct. 2024.
 
 S, Ravikiran A. “All You Need to Know about C++ Memory Management: Simplilearn.” Simplilearn.Com, Simplilearn, 23 July 2024, www.simplilearn.com/tutorials/cpp-tutorial/cpp-memory-management#:~:text=Once%20the%20memory%20is%20allocated,memory%20using%20the%20delete%20operator. Accessed 19 Oct. 2024.
 Stroustrup, Bjarne, and Herb Sutter. "C++ Core Guidelines." 3 Oct. 2024, isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main. Accessed 16 Oct. 2024.
