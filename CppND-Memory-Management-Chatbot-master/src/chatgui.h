@@ -19,11 +19,9 @@ private:
     //// STUDENT CODE       Task 1: Change "_chatLogic" into a smart pointer
     ////
 
-    ChatLogic *_chatLogic;  // pointer to chat logic itself
+    //ChatLogic *_chatLogic;  // pointer to chat logic itself
 
-    unique_ptr<ChatLogic> uniquePtr(*_chatLogic);     // construct unique pointer
-    //shared_ptr<ChatLogic> sharedPtr;       // Shared pointer
-    //ChatLogic *rawPtr;  // Raw pointer
+    unique_ptr<ChatLogic> _chatLogic;     // UNIQUE pointer to chat logic itself
 
     ////
     //// EOF STUDENT CODE
