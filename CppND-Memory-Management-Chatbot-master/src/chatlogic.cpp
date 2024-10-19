@@ -5,12 +5,14 @@
 #include <iterator>
 #include <tuple>
 #include <algorithm>
+#include <memory>
 
 #include "graphedge.h"
 #include "graphnode.h"
 #include "chatbot.h"
 #include "chatlogic.h"
 
+using namespace std;
 
 ChatLogic::ChatLogic()
 {
@@ -160,10 +162,10 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
                             auto childNode = std::find_if(_nodes.begin(), _nodes.end(), [&childToken](GraphNode *node) { return node->GetID() == std::stoi(childToken->second); });
 
                             // create new edge
-                            GraphEdge *edge = new GraphEdge(id);
-                            edge->SetChildNode(*childNode);
-                            edge->SetParentNode(*parentNode);
-                            _edges.push_back(edge);
+                            unique_ptr<GraphEdge> edge = unique_ptr<GraphEdge> (new GraphEdge(id));    // changed '*edge' into UNIQUE pointer
+                            edge->SetChildNode((*childNode).get());    // returns raw pointer
+                            edge->SetParentNode((*parentNode).get());    // returns raw pointer
+                            _edges.push_back(edge.get());    // returns raw pointer
 
                             // find all keywords for current node
                             AddAllTokensToElement("KEYWORD", tokens, *edge);
