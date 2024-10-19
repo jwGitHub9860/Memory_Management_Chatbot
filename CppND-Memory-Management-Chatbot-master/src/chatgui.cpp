@@ -117,7 +117,7 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
     // allow for PNG images to be handled
     wxInitAllImageHandlers();
 
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 1: Change "_chatLogic" into a smart pointer
     ////
 
     // create chat logic instance
@@ -135,7 +135,7 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
 
 ChatBotPanelDialog::~ChatBotPanelDialog()
 {
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 1: Change "_chatLogic" into a smart pointer
     ////
 
     //delete _chatLogic;  // frees up memory  ---> do NOT want; need the pointer
