@@ -18,9 +18,9 @@ Omar. "TASK 2: Usage of _chatLogic->SetChatbotHandle(this);." Knowledge, Udacity
 
 R. Nick R. "Warm up task/bug." Knowledge, Udacity, knowledge.udacity.com/questions/646637. Accessed 16 Oct. 2024.
 
+Stroustrup, Bjarne, and Herb Sutter. "C++ Core Guidelines." 3 Oct. 2024, isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main. Accessed 16 Oct. 2024.
 str1ngth3ory. "str1ngth3ory/Chatbot: Udacity C++ Nanodegree Project 3." GitHub, github.com/str1ngth3ory/Chatbot. Accessed 16 Oct. 2024.
 
 "The Rule of Five in C++." GeeksforGeeks, 17 Jan. 2024, www.geeksforgeeks.org/rule-of-five-in-cpp/. Accessed 16 Oct. 2024.
 
 YueYang-ASIC. "CppND-Memory-Management-Chatbot/src at master · YueYang-ASIC/CppND-Memory-Management-Chatbot." GitHub, github.com/YueYang-ASIC/CppND-Memory-Management-Chatbot/tree/master/src. Accessed 16 Oct. 2024.
-
