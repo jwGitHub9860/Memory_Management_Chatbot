@@ -3,6 +3,8 @@ References:
 Alexander K. "Problem starting chatbot from workspace." Knowledge, Udacity, knowledge.udacity.com/questions/507542. Accessed 16 Oct. 2024.
 "Arrow operator -> in C/C++ with Examples." GeeksforGeeks, 20 Mar. 2023, www.geeksforgeeks.org/arrow-operator-in-c-c-with-examples/. Accessed 19 Oct. 2024.
 
+"Creating an instance of class." Stack Overflow, 1 Dec. 1957, stackoverflow.com/questions/12248703/creating-an-instance-of-class. Accessed 19 Oct. 2024.
+
 Daniela M. "Problems with Task3." Knowledge, Udacity, knowledge.udacity.com/questions/775764. Accessed 19 Oct. 2024.
 
 "error: 'class std::unique_ptr<std::set<long unsigned int> >' has no member named 'size'." Stack Overflow, 1 Mar. 1965, stackoverflow.com/questions/59132571/error-class-stdunique-ptrstdsetlong-unsigned-int-has-no-member-named. Accessed 19 Oct. 2024.
@@ -20,6 +22,8 @@ Kinshuk Vasisht. "What is new int in c++: Sololearn: Learn to code for FREE!" So
 
 Omar. "TASK 2: Usage of _chatLogic->SetChatbotHandle(this);." Knowledge, Udacity, knowledge.udacity.com/questions/607087. Accessed 18 Oct. 2024.
 "online compiler and debugger for c/c++." GDB online Debugger, www.onlinegdb.com/. Accessed 16 Oct. 2024.
+
+"POD Type in C++." GeeksforGeeks, 5 June 2024, www.geeksforgeeks.org/pod-type-in-cpp/. Accessed 19 Oct. 2024.
 
 R. Nick R. "Warm up task/bug." Knowledge, Udacity, knowledge.udacity.com/questions/646637. Accessed 16 Oct. 2024.
 "r/cpp_questions on Reddit: What is the purpose of get() for unique_ptr?" www.reddit.com/r/cpp_questions/comments/m1ca4a/what_is_the_purpose_of_get_for_unique_ptr/#:~:text=It%20gets%20you%20a%20raw,pass%20it%20into%20a%20function. Accessed 19 Oct. 2024.
