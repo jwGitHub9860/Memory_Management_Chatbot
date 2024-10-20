@@ -16,6 +16,7 @@ George. "Completely lost with Chatbot Project." Knowledge, Udacity, knowledge.ud
 Hsiao-Hung C. "Task 2 Rule of Five : The usage of _chatLogic->SetChatbotHandle(this)." Knowledge, Udacity, knowledge.udacity.com/questions/1038177. Accessed 18 Oct. 2024.
 
 Josi K. "Warm Up Task." Knowledge, Udacity, knowledge.udacity.com/questions/814295. Accessed 16 Oct. 2024.
+Justin. "Task 3: Unknown Error use of deleted function." Knowledge, Udacity, knowledge.udacity.com/questions/76200. Accessed 20 Oct. 2024.
 
 Kinshuk Vasisht. "What is new int in c++: Sololearn: Learn to code for FREE!" Sololearn, 6 Jan 2018, www.sololearn.com/en/Discuss/983892/what-is-new-int-in-c. Accessed 17 Oct. 2024.
 
