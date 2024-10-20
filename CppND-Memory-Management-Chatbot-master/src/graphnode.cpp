@@ -40,8 +40,8 @@ void GraphNode::AddEdgeToChildNode(unique_ptr<GraphEdge> edge)  // changed "edge
 ////
 void GraphNode::MoveChatbotHere(ChatBot *chatbot)
 {
-    _chatBot = chatbot;
-    //_chatBot->SetCurrentNode(this);       // do NOT need since "_chatBot" is no longer a pointer
+    _chatBot = move(chatbot);
+    _chatBot->SetCurrentNode(this);
 }
 
 void GraphNode::MoveChatbotToNewNode(GraphNode *newNode)
