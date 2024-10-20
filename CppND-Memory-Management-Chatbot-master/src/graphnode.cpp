@@ -57,7 +57,7 @@ GraphEdge *GraphNode::GetChildEdgeAtIndex(int index)
     //// STUDENT CODE
     ////
 
-    return _childEdges[index];
+    return _childEdges[index].get();    // used ".get()" since "_childEdges" is a UNIQUE pointer
 
     ////
     //// EOF STUDENT CODE
