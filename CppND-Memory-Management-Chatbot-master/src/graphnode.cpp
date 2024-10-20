@@ -41,13 +41,13 @@ void GraphNode::AddEdgeToChildNode(unique_ptr<GraphEdge> edge)  // changed "edge
 void GraphNode::MoveChatbotHere(ChatBot *chatbot)
 {
     _chatBot = chatbot;
-    _chatBot->SetCurrentNode(this);
+    //_chatBot->SetCurrentNode(this);       // do NOT need since "_chatBot" is no longer a pointer
 }
 
 void GraphNode::MoveChatbotToNewNode(GraphNode *newNode)
 {
     newNode->MoveChatbotHere(_chatBot);
-    _chatBot = nullptr; // invalidate pointer at source
+    //_chatBot = nullptr; // invalidate pointer at source   do NOT need since "_chatBot" is no longer a pointer
 }
 ////
 //// EOF STUDENT CODE
