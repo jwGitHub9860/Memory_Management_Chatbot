@@ -23,7 +23,7 @@ private:
 
     // data handles (not owned)
     std::vector<GraphEdge *> _parentEdges; // edges to preceding nodes          NOT responsible for allocating & de-allocating memory
-    ChatBot *_chatBot;
+    ChatBot _chatBot;     // declares instance, not POD (Plain Old Data) type
 
     ////
     //// EOF STUDENT CODE
