@@ -19,7 +19,7 @@ private:
 
     // data handles (owned)
     //std::vector<GraphEdge *> _childEdges;  // edges to subsequent nodes         responsible for allocating & de-allocating memory
-    unique_ptr<GraphEdge> _childEdges;  // edges to subsequent nodes         responsible for allocating & de-allocating memory         changed "_childEdges" into UNIQUE pointer since function using pointer takes Unique pointer
+    std::vector<unique_ptr<GraphEdge>> _childEdges;  // edges to subsequent nodes         responsible for allocating & de-allocating memory         changed "_childEdges" into UNIQUE pointer since function using pointer takes Unique pointer
 
     // data handles (not owned)
     std::vector<GraphEdge *> _parentEdges; // edges to preceding nodes          NOT responsible for allocating & de-allocating memory
