@@ -31,7 +31,7 @@ ChatLogic::ChatLogic()
 
 ChatLogic::~ChatLogic()
 {
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 3: Change "_nodes" into a smart pointer
     ////
 
     // delete chatbot instance
@@ -125,7 +125,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
                     // node-based processing
                     if (type->second == "NODE")
                     {
-                        //// STUDENT CODE
+                        //// STUDENT CODE       Task 3: Change "_nodes" into a smart pointer
                         ////
 
                         // check if node with this ID exists already
@@ -148,7 +148,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
                     // edge-based processing
                     if (type->second == "EDGE")
                     {
-                        //// STUDENT CODE
+                        //// STUDENT CODE       Task 3: Change "_nodes" into a smart pointer
                         ////
 
                         // find tokens for incoming (parent) and outgoing (child) node
@@ -195,7 +195,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
         return;
     }
 
-    //// STUDENT CODE
+    //// STUDENT CODE       Task 3: Change "_nodes" into a smart pointer
     ////
 
     // identify root node
