@@ -52,7 +52,7 @@ public:
     //// STUDENT CODE
     ////
 
-    void MoveChatbotHere(ChatBot *chatbot);     // pass handle to ChatBot & move it here
+    void MoveChatbotHere(ChatBot chatbot);     // pass handle to ChatBot & move it here         chatbot (or "_chatBot") is an INSTANCE
 
     ////
     //// EOF STUDENT CODE
