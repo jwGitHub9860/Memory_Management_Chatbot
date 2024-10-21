@@ -5,6 +5,7 @@ Alexander K. "Problem starting chatbot from workspace." Knowledge, Udacity, know
 
 B2BM2M. “CPPND-MEMORY-MANAGEMENT-CHATBOT/CPPND-MEMORY-MANAGEMENT-CHATBOT-MASTER/SRC/GRAPHNODE.H at Main · B2BM2M/CPPND-Memory-Management-Chatbot.” GitHub, github.com/B2BM2M/CppND-Memory-Management-Chatbot/blob/main/CppND-Memory-Management-Chatbot-master/src/graphnode.h. Accessed 19 Oct. 2024.
 
+chris w. "Ownership of chatBot." Knowledge, Udacity, knowledge.udacity.com/questions/561555. Accessed 20 Oct. 2024.
 "Creating an instance of class." Stack Overflow, 1 Dec. 1957, stackoverflow.com/questions/12248703/creating-an-instance-of-class. Accessed 19 Oct. 2024.
 
 Daniela M. "Problems with Task3." Knowledge, Udacity, knowledge.udacity.com/questions/775764. Accessed 19 Oct. 2024.
