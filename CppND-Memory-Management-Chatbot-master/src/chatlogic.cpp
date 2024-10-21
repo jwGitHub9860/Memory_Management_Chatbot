@@ -221,7 +221,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
     _chatBot.SetChatLogicHandle(this);      // links CURRENT ChatBot instance with ChatLogic manager
 
     // add chatbot to graph root node
-    _chatBot->SetRootNode(rootNode);
+    _chatBot.SetRootNode(rootNode);
     rootNode->MoveChatbotHere(move(_chatBot));
     
     ////
