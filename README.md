@@ -6,10 +6,12 @@ Alexander K. "Problem starting chatbot from workspace." Knowledge, Udacity, know
 B2BM2M. “CPPND-MEMORY-MANAGEMENT-CHATBOT/CPPND-MEMORY-MANAGEMENT-CHATBOT-MASTER/SRC/GRAPHNODE.H at Main · B2BM2M/CPPND-Memory-Management-Chatbot.” GitHub, github.com/B2BM2M/CppND-Memory-Management-Chatbot/blob/main/CppND-Memory-Management-Chatbot-master/src/graphnode.h. Accessed 19 Oct. 2024.
 
 chris w. "Ownership of chatBot." Knowledge, Udacity, knowledge.udacity.com/questions/561555. Accessed 20 Oct. 2024.
+chrisgitgeek. "chrisgitgeek/ucpp_chatbot." GitHub, github.com/chrisgitgeek/ucpp_chatbot. Accessed 20 Oct. 2024.
 "Creating an instance of class." Stack Overflow, 1 Dec. 1957, stackoverflow.com/questions/12248703/creating-an-instance-of-class. Accessed 19 Oct. 2024.
 
 Daniela M. "Problems with Task3." Knowledge, Udacity, knowledge.udacity.com/questions/775764. Accessed 19 Oct. 2024.
 
+Erased E. "unable to reproduce output in the lesson on move semantics." Knowledge, Udacity, knowledge.udacity.com/questions/285092. Accessed 20 Oct. 2024.
 "error: 'class std::unique_ptr<std::set<long unsigned int> >' has no member named 'size'." Stack Overflow, 1 Mar. 1965, stackoverflow.com/questions/59132571/error-class-stdunique-ptrstdsetlong-unsigned-int-has-no-member-named. Accessed 19 Oct. 2024.
 
 George. "Completely lost with Chatbot Project." Knowledge, Udacity, knowledge.udacity.com/questions/180795. Accessed 16 Oct. 2024.
@@ -18,9 +20,11 @@ Hsiao-Hung C. "Task 2 Rule of Five : The usage of _chatLogic->SetChatbotHandle(t
 
 Josi K. "Warm Up Task." Knowledge, Udacity, knowledge.udacity.com/questions/814295. Accessed 16 Oct. 2024.
 Justin. "Task 3: Unknown Error use of deleted function." Knowledge, Udacity, knowledge.udacity.com/questions/76200. Accessed 20 Oct. 2024.
+Jusuf. "why am I getting a different output than what is requested?" Knowledge, Udacity, knowledge.udacity.com/questions/393723. Accessed 20 Oct. 2024.
 
 Kinshuk Vasisht. "What is new int in c++: Sololearn: Learn to code for FREE!" Sololearn, 6 Jan 2018, www.sololearn.com/en/Discuss/983892/what-is-new-int-in-c. Accessed 17 Oct. 2024.
 
+mj531. "Udacity_C/Project 3 CppND-Memory-Management-Chatbot at main · mj531/Udacity_C." GitHub, github.com/mj531/Udacity_C/tree/main/Project%203%20CppND-Memory-Management-Chatbot. Accessed 20 Oct 2024.
 "MLA Works Cited: Electronic Sources (Web Publications)." MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University, 
       owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 16 Oct. 2024.
 
