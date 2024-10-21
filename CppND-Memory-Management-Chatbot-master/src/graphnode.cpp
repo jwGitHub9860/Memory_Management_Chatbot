@@ -38,7 +38,7 @@ void GraphNode::AddEdgeToChildNode(unique_ptr<GraphEdge> edge)  // changed "edge
 
 //// STUDENT CODE
 ////
-void GraphNode::MoveChatbotHere(ChatBot *chatbot)
+void GraphNode::MoveChatbotHere(ChatBot chatbot)    // chatbot (or "_chatBot") is an INSTANCE
 {
     _chatBot = move(chatbot);
     _chatBot->SetCurrentNode(this);
