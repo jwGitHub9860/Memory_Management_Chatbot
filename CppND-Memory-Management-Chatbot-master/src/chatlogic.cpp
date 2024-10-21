@@ -218,7 +218,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)     // main functi
     }
 
     ChatBot _chatBot("../images/chatbot.png");      // creates instance of chatbot ("_chatBot")
-    _chatBot->SetChatLogicHandle(this);      // links CURRENT ChatBot instance with ChatLogic manager
+    _chatBot.SetChatLogicHandle(this);      // links CURRENT ChatBot instance with ChatLogic manager
 
     // add chatbot to graph root node
     _chatBot->SetRootNode(rootNode);
